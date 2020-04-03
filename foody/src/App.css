@@ -1,38 +1,249 @@
-.App {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body button {
+  background-color: #4AAB00;
+  color: white;
+  height: 3em;
+  border-radius: 3px;
+  border-color: #4AAB00;
+}
+
+body li {
+  list-style: none;
+}
+
+body h1, label {
+  color: #4AAB00;
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: transparent; */
+  background: linear-gradient(138deg, rgba(0,16,41,1) 0%, rgba(0,9,55,1) 6%, rgba(5,31,39,1) 69%);
+  color: white;
+  padding-left: 15px;
+}
+
+.Footer p {
+  float: left;
+}
+
+.Footer .right {
+  float: right;
+}
+
+nav {
+  overflow: hidden;
+  /* background-color: transparent; */
+  background: linear-gradient(138deg, rgba(0,16,41,1) 0%, rgba(0,9,55,1) 6%, rgba(5,31,39,1) 69%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+nav a {
+  float: right; 
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav button {
+  float: right;
+  /* display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav span {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Home {
+  height: 100vh;
+  /* background: linear-gradient(138deg, rgba(0,16,41,1) 0%, rgba(0,9,55,1) 6%, rgba(5,31,39,1) 69%); */
+  color: white;
+  background: url('./Assets/3042.png') no-repeat center center fixed; 
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding-left: 20%;
+}
+
+
+.About {
+  height: 70vh;
+  background-color: #F5F5F5;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.About div {
+  width: 50%;
+  margin: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.Specialties {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  /* background-color: grey; */
+  background-image: url('./Assets/background.png'); 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
+
+.picsDiv {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.picsDiv div {
+  background-color: #F5F5F5;
+  margin: 5px;
+  height: 70%;
+  width: 18%;
+  padding: 2px;
+}
+
+
+.Menu {
+  height: 150vh;
+  background-color: #F5F5F5;
+  text-align: center;
+  padding-left: 20px;
+  padding: 10px;
+}
+
+.Menu div {
+  /* margin: 10px; */
+  margin: 5px;
+}
+
+.Menu #mainDiv {
+  height: 95%;
+}
+
+.menuHalf1, .menuHalf2 {
+  display: inline-block;
+  width: 45%;
+  height: 90%;
+  text-align: left;
+}
+
+.Menu p, .Menu h2{
+  display: inline;
+}
+
+.Menu h2, h3 {
+  color: #4AAB00;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.Services {
+  height: 60vh;
+  /* background-color: grey; */
+  background: url('./Assets/background2.png') no-repeat center center fixed; 
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.Services button, input{
+  display: block;
+}
+
+.Services input {
+  width: 10em;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.Services label {
+  display: block;
+  text-align: left;
+}
+
+.Services select {
+  background-color: white;
+  border: thin solid grey;
+  border-radius: 4px;
+  display: block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  margin: 2px;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+  linear-gradient(45deg, transparent 50%, white 50%),
+  linear-gradient(135deg, white 50%, transparent 50%),
+  linear-gradient(to right, #4AAB00, #4AAB00);
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  100% 0;
+background-size:
+  5px 5px,
+  5px 5px,
+  2.5em 2.5em;
+background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 580px) {
+  body h1, h2, h3, p{
+      font-size: 2.5vw;
+  }
+  nav {
+      float:none;
+      width: 100vw;
+  }
+
+  .Menu {
+    height: 150vh;
+    padding-left: 5px;
+    padding: 2px;
+  }
+
+  .Menu #mainDiv{
+    height: 80%;
+  }
+
+}
+
