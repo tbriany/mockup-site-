@@ -17,6 +17,7 @@ body li {
   list-style: none;
 }
 
+
 body h1, label {
   color: #4AAB00;
 }
@@ -86,7 +87,6 @@ nav span {
   align-items: center;
   padding-left: 20%;
 }
-
 
 .About {
   height: 70vh;
@@ -247,3 +247,21 @@ background-repeat: no-repeat;
 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.Home h1 {
+  font-family: 'roboto';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.body h1 {
+  font-family: 'Source Sans Pro';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lata');
+
+.Menu h2, h3 {
+  font-family: 'Lato';
+  text-transform: uppercase;
+}
